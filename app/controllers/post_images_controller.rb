@@ -11,6 +11,7 @@ class PostImagesController < ApplicationController
   end
 
   def index
+    @post_images = PostImage.all.order(id: :asc)
   end
 
   def show
