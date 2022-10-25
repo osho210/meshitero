@@ -60,3 +60,6 @@ gem 'devise'
 
 # errの開発
 gem "net-smtp"
+
+# ページネーションに使用するGem
+gem 'kaminari','~> 1.2.1'

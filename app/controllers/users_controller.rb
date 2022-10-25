@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   def show
     # 特定のuserの絞り込み
     @user = User.find(params[:id])
-    @post_images = @user.post_images
+    @post_images = @user.post_images.page(params[:page])
   end
 
   def edit

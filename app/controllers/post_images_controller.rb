@@ -20,7 +20,7 @@ class PostImagesController < ApplicationController
   end
 
   def index
-    @post_images = PostImage.all.order(id: :asc)
+    @post_images = PostImage.page(params[:page])
   end
 
   def show
