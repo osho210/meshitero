@@ -57,3 +57,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # 認証機能の導入
 gem 'devise'
+
+# errの開発
+gem "net-smtp"
